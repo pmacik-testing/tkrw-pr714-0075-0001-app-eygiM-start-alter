@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gnys
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0001-tenant/tkrw-pr714-0075-0001-app/devfile-sample-gnys@sha256:2ca90c95a83812e506c7b128b5039a7c3e52d8aca4a4a898be3c4350a650521b
+        name: my-nodejs
+        resources: {}
+status: {}
